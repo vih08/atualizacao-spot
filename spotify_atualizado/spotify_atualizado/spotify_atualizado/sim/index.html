@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar no Good Music</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main id="sign-in-page">
+        <div class="container">
+            <img class="logo" src="./assets/logo.png" alt="">
+            <h3>Efetuar Cadastro</h3>
+            <p>Digite seus dados para se cadastrar na plataforma</p>
+            <form onsubmit="event.preventDefault(); cadastrarUsuario();">
+                <input type="text" placeholder="Nome completo" id="name" required>
+                <input type="email" placeholder="E-mail" id="email" required>
+                <input type="email" placeholder="Confirmar e-mail" id="confirm-email" required>
+                <div class="inline-center">
+                    <input type="password" placeholder="Senha" id="password" required>
+                    <input type="password" placeholder="Confirmar senha" id="confirm-password" required>
+                </div>
+                <span id="mensagem"></span>
+                <div class="inline-end">
+                    <button type="button" onclick="voltar()">Voltar</button>
+                    <button type="submit">Acessar</button>
+                </div>
+            </form>
+            <img class="image" src="./assets/img-cadastro.png" alt="">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

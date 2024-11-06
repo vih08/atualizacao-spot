@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-content">
+        <header>
+            <h1>Good Music</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pesquisar playlists...">
+                <button id="searchButton">Buscar</button>
+            </div>
+            <nav class="sidebar">
+                <h3>Cadastro de Música</h3>
+                <input type="text" id="titleInput" placeholder="Título">
+                <input type="text" id="artistInput" placeholder="Artista">
+                <input type="text" id="genderInput" placeholder="Gênero">
+                <input type="text" id="durationInput" placeholder="Duração">
+                <!-- Substituindo o campo para o link por um campo para upload de arquivo -->
+                <input type="file" id="musicInput" accept=".mp3">
+                <button id="registerId">Cadastrar</button>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Playlists</h2>
+            <div class="playlists-container"></div>
+            <iframe id="musicPlayer" width="300" height="150" style="display:none;" frameborder="0" allow="autoplay" src=""></iframe>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Good Music</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
